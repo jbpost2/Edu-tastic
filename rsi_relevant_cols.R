@@ -16,5 +16,6 @@ rsi <- rsi %>%
            mutate(countyname = str_sub(countyname, end = -11)) %>%
            filter(state == "North Carolina" & duplicated(countyname == FALSE))
 
+rsi <- unique(rsi)
 
-
+rsi
