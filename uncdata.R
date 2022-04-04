@@ -20,13 +20,19 @@ popdata <- read.csv("popdata2.csv")
 combined2 <- inner_join(combined, popdata, by = setNames('AreaName', 'County')) 
 
 # Read in the county type date
-classification <- read.csv("urban")
+classification <- read.csv("urbanruralclass.csv")
+
+# Add a classification column to the combined data
+combined3 <- inner_join(combined2, classification, by = setNames("COUNTYNAME", "County"))
+
+
 # Create a new variable for the percent of county residents enrolled in 4 year institutions
-rate_of_admit <- combined2$Fall.2019/combined2$Population
-combined2$rate <- rate_of_admit
+rate_of_admit <- combined3$Fall.2019/combined2$Population
+combined3$rate <- rate_of_admit
+
 
 # Plot the % of internet available vs the rate of enrollment
-ggplot(combined2, aes(x=combined$Percent_No_Int__Access, y=rate, size = Population )) + 
+ggplot(data = combined3, aes(x=combined3$Percent_No_Int__Access, y=rate, size = Population, color = URBAN_RURAL )) + 
   geom_point(alpha=0.7) + 
   scale_size(range = c(.1, 24), name="Population (M)")
 
