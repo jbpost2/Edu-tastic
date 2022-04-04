@@ -25,10 +25,11 @@ classification <- read.csv("urbanruralclass.csv")
 # Add a classification column to the combined data
 combined3 <- inner_join(combined2, classification, by = setNames("COUNTYNAME", "County"))
 
-
+combined3$Percent_No_Int__Access
 # Create a new variable for the percent of county residents enrolled in 4 year institutions
 rate_of_admit <- combined3$Fall.2019/combined2$Population
 combined3$rate <- rate_of_admit
+
 
 
 # Plot the % of internet available vs the rate of enrollment
