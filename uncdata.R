@@ -34,7 +34,10 @@ combined3$rate <- rate_of_admit
 # Plot the % of internet available vs the rate of enrollment
 ggplot(data = combined3, aes(x=combined3$Percent_No_Int__Access, y=rate, size = Population, color = URBAN_RURAL )) + 
   geom_point(alpha=0.7) + 
-  scale_size(range = c(.1, 24), name="Population (M)")
+  scale_size(range = c(.1, 24), name="Population")
 
 
+ggplot(data=combined3, aes(x=combined3$Percent_Poverty, y=rate, size = Population, color = URBAN_RURAL )) + 
+  geom_point(alpha=0.7) + 
+  scale_size(range = c(.1, 24), name="Population")
 
