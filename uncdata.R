@@ -12,6 +12,14 @@ combined <- inner_join(enrollment2, internet1, by = setNames('NAME_LOCAS', 'Coun
 combined$Fall.2019 = as.character(combined$Fall.2019)
 combined$Fall.2019 = as.numeric(combined$Fall.2019)
 
-ggplot(combined, aes(x=combined$Percent_No_Int__Access, y=Fall.2019)) + geom_point()
-combined$Fall.2019
+
+popdata <- read.csv("popdata2.csv")
+combined2 <- inner_join(combined, popdata, by = setNames('AreaName', 'County')) 
+
+rate_of_admit <- combined2$Fall.2019/combined2$Population
+
+combined2$rate <- rate_of_admit
+
+ggplot(combined2, aes(x=combined$Percent_No_Int__Access, y=rate)) + geom_point()
+
 
