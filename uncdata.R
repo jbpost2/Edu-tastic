@@ -4,7 +4,8 @@ library(tidyverse)
 internet <- read.csv("NC_Broadband_Indices.csv")
 internet1 <- internet %>% 
   filter(YEAR == "2018" ) %>% 
-  select(NAME_LOCAS,
+  mutate(County = NAME_LOCAS) %>%
+  select(County,
          Percent_Ages_18_34, 
          Percent_No_Int__Access, 
          Percent_Poverty, 
@@ -13,43 +14,47 @@ internet1 <- internet %>%
          Availability,
          Adoption,
          Percent_Pop__No_Prov_,
+         Percent_Hhlds__Children,
          Percent_Pop__25_3,
-         Percent_Pop__100_20)
-
-# Read in the UNC Enrollment data
-enrollment <- read.csv("overallunc.csv")
-enrollment2 <- enrollment %>% filter(X == "Student Headcount") %>% select("County", "Fall.2019")
-
-
-#Join the two data frames by county name
-combined <- inner_join(enrollment2, internet1, by = setNames('NAME_LOCAS', 'County')) 
-                       
-# Enrollment numbers were not numbers so convert them
-combined$Fall.2018 <- as.numeric(gsub(",","",combined$Fall.2018))
-
+         Percent_Pop__100_20
+  )
 
 # Read in the population data by county and join it with the merged data set
 popdata <- read.csv("popdata2.csv")
-combined2 <- inner_join(combined, popdata, by = setNames('AreaName', 'County')) 
+combined2 <- inner_join(internet1, popdata, by = setNames('AreaName', 'County')) 
 
-# Read in the county type date
+# Read in the county type data
 classification <- read.csv("urbanruralclass.csv")
 
 # Add a classification column to the combined data
 combined3 <- inner_join(combined2, classification, by = setNames("COUNTYNAME", "County"))
 
+# Read in RSI data in order to add has_college variable
+rsi <- read_csv("rsi_full.csv")
+rsi <- rsi %>%
+  filter(state == "North Carolina") %>%
+  select(countyname
+  )%>%
+  mutate(countyname = str_sub(countyname, end = -12)) %>%
+  mutate(has_college = 1)
 
-# Add in other data
+rsi <- unique(rsi)
 
+combined4 <- left_join(combined3, rsi, by = setNames("countyname", "County"))
+
+combined4 <- combined4 %>%
+  mutate(has_college = if_else(is.na(has_college), 0,1))
 
 # Read in the educational data by county
-full_data <- read.csv("schooldata.csv")
-full_data$County <- (gsub(" County","",full_data$Name))
+edu_data <- read.csv("schooldata.csv")
+edu_data <- edu_data %>%
+  mutate(County = (gsub(" County","",Name))) %>%
+  select(
+    -Name,
+    -Geographic.Type
+  )
 
-full_data$Charter..Private..Home.Schools
-full_data <- inner_join(full_data, combined3, by = setNames("County", "County"))
+full_data <- inner_join(edu_data, combined4, by = setNames("County", "County"))
 
-
-write.csv(full_data, "DigitalDivide\combineddata.csv")
-
+write_csv(full_data,"full_data.csv")
 
