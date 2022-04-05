@@ -9,6 +9,7 @@
 
 library(shiny)
 library(DT)
+library(plotly)
 
 # Define UI for application that draws a histogram
 shinyUI(fluidPage(
@@ -68,15 +69,15 @@ shinyUI(fluidPage(
                                "Total Graduates 2018"="Total.Graduates..2018.")),
                  
                  
-                 
+        checkboxInput("class", "Choose only Rural Counties")         
                ), #This ends sidebarPanel
                
                
                mainPanel(
                  
-                 plotOutput("edaPlot"),
+                 plotlyOutput("edaPlot"),
                  dataTableOutput('table')
-                 
+                
                  
                  
                )# This ends mainPanel 

@@ -3,7 +3,7 @@ library(tidyverse)
 # Read in the internet data and select only relevant columns
 internet <- read.csv("NC_Broadband_Indices.csv")
 internet1 <- internet %>% 
-  filter(YEAR == "2019" ) %>% 
+  filter(YEAR == "2018" ) %>% 
   select(NAME_LOCAS,
          Percent_Ages_18_34, 
          Percent_No_Int__Access, 
@@ -25,7 +25,7 @@ enrollment2 <- enrollment %>% filter(X == "Student Headcount") %>% select("Count
 combined <- inner_join(enrollment2, internet1, by = setNames('NAME_LOCAS', 'County')) 
                        
 # Enrollment numbers were not numbers so convert them
-combined$Fall.2019 <- as.numeric(gsub(",","",combined$Fall.2019))
+combined$Fall.2018 <- as.numeric(gsub(",","",combined$Fall.2018))
 
 
 # Read in the population data by county and join it with the merged data set
@@ -39,9 +39,8 @@ classification <- read.csv("urbanruralclass.csv")
 combined3 <- inner_join(combined2, classification, by = setNames("COUNTYNAME", "County"))
 
 
-# Create a new variable for the percent of county residents enrolled in 4 year institutions
-rate_of_admit <- combined3$Fall.2019/combined2$Population
-combined3$rate <- rate_of_admit
+# Add in other data
+
 
 # Read in the educational data by county
 full_data <- read.csv("schooldata.csv")
@@ -50,5 +49,7 @@ full_data$County <- (gsub(" County","",full_data$Name))
 full_data$Charter..Private..Home.Schools
 full_data <- inner_join(full_data, combined3, by = setNames("County", "County"))
 
+
+write.csv(full_data, "DigitalDivide\combineddata.csv")
 
 
