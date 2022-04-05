@@ -33,13 +33,13 @@ shinyServer(function(input, output, session) {
       ggplotly(
         ggplot(data = filter(digital, URBAN_RURAL == "Rural") , aes(x=!!rlang::sym(input$xvar), y=!!rlang::sym(input$yvar), size = Population, color = Population, text = paste("County:", County) )) + 
           geom_point(alpha=0.7) + 
-          scale_size(range = c(.1, 24), name="Population"))
+          scale_size( name="Population"))
     )}else{
     
     ggplotly(
     ggplot(data = digital, aes(x=!!rlang::sym(input$xvar), y=!!rlang::sym(input$yvar), size = Population, color = URBAN_RURAL, text = paste("County:", County) )) + 
       geom_point(alpha=0.7) + 
-      scale_size(range = c(.1, 24), name="Population"))}
+      scale_size( name="Population"))}
   })
   
   output$table <- renderDataTable(digital,

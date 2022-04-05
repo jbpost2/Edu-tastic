@@ -28,7 +28,7 @@ shinyUI(fluidPage(
                  #Choose x variable for data exploration
                  selectInput("xvar",
                              "Select X variable",
-                             c("Enrollment Rate" = "rate",
+                             c(
                                "% no internet access" = "Percent_No_Int__Access",
                                "% Poverty"= "Percent_Poverty",
                                "% Limited English"="Percent_Lim__English",
@@ -50,7 +50,7 @@ shinyUI(fluidPage(
                  #Choose y variable for exploration
                  selectInput("yvar",
                              "Select Y variable",
-                             c("Enrollment Rate" = "rate",
+                             c(
                                "% no internet access" = "Percent_No_Int__Access",
                                "% Poverty"= "Percent_Poverty",
                                "% Limited English"="Percent_Lim__English",
