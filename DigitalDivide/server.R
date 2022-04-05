@@ -78,7 +78,15 @@ shinyServer(function(input, output, session) {
     ggplotly(p + xlab(names(var_labels)[which(var_labels==input$xvar)]) + ylab(names(var_labels)[which(var_labels==input$yvar)]), source = "select")
   })
   
-  output$table <- renderDataTable(digital,
+  output$table <- renderDataTable({
+    click_data <- event_data(event = "plotly_click", source = "select")
+    digital$key <- row.names(digital)
+    if (!is.null(click_data)) {
+      first <- which(digital$key %in% click_data$key)
+      digital[c(first,digital$key[-first]),]
+    } else {
+      digital
+    }},
                                   options = list(
                                     pageLength = 5))
  
