@@ -51,6 +51,7 @@ shinyUI(fluidPage(
                mainPanel(
                  
                  plotOutput("edaPlot"),
+                 dataTableOutput('table')
                  
                  
                  

@@ -32,6 +32,10 @@ shinyServer(function(input, output, session) {
       geom_point(alpha=0.7) + 
       scale_size(range = c(.1, 24), name="Population")
   })
+  
+  output$table <- renderDataTable(digital,
+                                  options = list(
+                                    pageLength = 5))
 
    #This ends the main plot Functions
   
