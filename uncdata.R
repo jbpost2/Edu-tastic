@@ -8,12 +8,12 @@ internet1 <- internet %>% filter(YEAR == "2019" ) %>% select(NAME_LOCAS,Percent_
 enrollment <- read.csv("overallunc.csv")
 enrollment2 <- enrollment %>% filter(X == "Student Headcount") %>% select("County", "Fall.2019")
 
-#Join the two data frames by county name
+g#Join the two data frames by county name
 combined <- inner_join(enrollment2, internet1, by = setNames('NAME_LOCAS', 'County')) 
                        
 # Enrollment numbers were not numbers so convert them
-combined$Fall.2019 = as.character(combined$Fall.2019)
-combined$Fall.2019 = as.numeric(combined$Fall.2019)
+combined$Fall.2019 <- as.numeric(gsub(",","",combined$Fall.2019))
+
 
 # Read in the population data by county and join it with the merged data set
 popdata <- read.csv("popdata2.csv")
@@ -25,7 +25,7 @@ classification <- read.csv("urbanruralclass.csv")
 # Add a classification column to the combined data
 combined3 <- inner_join(combined2, classification, by = setNames("COUNTYNAME", "County"))
 
-combined3$Percent_No_Int__Access
+
 # Create a new variable for the percent of county residents enrolled in 4 year institutions
 rate_of_admit <- combined3$Fall.2019/combined2$Population
 combined3$rate <- rate_of_admit
