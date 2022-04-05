@@ -1,111 +1,67 @@
-countyname,state,county_pct_rural,cluster_pct_rural_avg,not_adjacent_urban,lowed,lowemp,perpov,perchldpov
-Pasquotank ,North Carolina,41.32,88.17,0,0,0,0,1
-Anson ,North Carolina,78.51,60.67,0,1,1,0,0
-Watauga ,North Carolina,55.44,70.25,1,0,0,0,0
-Buncombe ,North Carolina,24.08,62.11,0,0,0,0,0
-Wilson ,North Carolina,38.66,50.77,0,0,0,0,1
-Beaufort ,North Carolina,65.6,66.38,0,0,1,0,1
-Gaston ,North Carolina,19.65,30.8,0,0,0,0,0
-Guilford ,North Carolina,12.69,41.41,0,0,0,0,0
-Bladen ,North Carolina,91.23,66.92,0,1,1,1,1
-Henderson ,North Carolina,33.27,48.34,0,0,0,0,0
-Transylvania ,North Carolina,59.64,47.82,0,0,0,0,0
-Brunswick ,North Carolina,42.96,44.98,0,0,1,0,0
-Caldwell ,North Carolina,34.43,56.74,0,1,0,0,0
-Harnett ,North Carolina,55.92,46.47,0,0,0,0,0
-New Hanover ,North Carolina,2.21,37.98,0,0,0,0,0
-Carteret ,North Carolina,32.6,64.44,0,0,0,0,0
-Rowan ,North Carolina,38.82,51.17,0,0,0,0,0
-Catawba ,North Carolina,30.3,45.44,0,0,0,0,0
-Lee ,North Carolina,42.76,53.82,0,0,0,0,0
-Mecklenburg ,North Carolina,1.07,29.08,0,0,0,0,0
-Hertford ,North Carolina,68.64,84.47,0,0,1,0,1
-Cleveland ,North Carolina,55.79,45.38,0,0,0,0,0
-Onslow ,North Carolina,26.35,62.83,0,0,0,0,0
-Craven ,North Carolina,27.71,56.62,0,0,1,0,0
-Davidson ,North Carolina,47.38,47.17,0,0,0,0,0
-Mecklenburg ,North Carolina,1.07,29.08,0,0,0,0,0
-Durham ,North Carolina,5.63,39.41,0,0,0,0,0
-Durham ,North Carolina,5.63,39.41,0,0,0,0,0
-Pitt ,North Carolina,25.44,53.23,0,0,0,1,1
-Edgecombe ,North Carolina,45.31,48.3,0,0,1,0,1
-Pasquotank ,North Carolina,41.32,88.17,0,0,0,0,1
-Alamance ,North Carolina,28.56,50.44,0,0,0,0,0
-Cumberland ,North Carolina,13.37,57.41,0,0,0,0,0
-Cumberland ,North Carolina,13.37,57.41,0,0,0,0,0
-Forsyth ,North Carolina,7.35,53.61,0,0,0,0,0
-Cleveland ,North Carolina,55.79,45.38,0,0,0,0,0
-Gaston ,North Carolina,19.65,30.8,0,0,0,0,0
-Guilford ,North Carolina,12.69,41.41,0,0,0,0,0
-Guilford ,North Carolina,12.69,41.41,0,0,0,0,0
-Guilford ,North Carolina,12.69,41.41,0,0,0,0,0
-Halifax ,North Carolina,54.71,72.95,0,0,1,1,1
-Haywood ,North Carolina,55.44,62.26,0,0,0,0,0
-Guilford ,North Carolina,12.69,41.41,0,0,0,0,0
-Rutherford ,North Carolina,61.04,51.99,0,0,1,0,0
-Duplin ,North Carolina,86.46,65.42,0,1,0,0,1
-Mecklenburg ,North Carolina,1.07,29.08,0,0,0,0,0
-Johnston ,North Carolina,52.04,52.12,0,0,0,0,0
-Avery ,North Carolina,88.78,62.55,0,0,1,0,0
-Lenoir ,North Carolina,45.01,61.57,0,0,0,0,1
-Catawba ,North Carolina,30.3,45.44,0,0,0,0,0
-Rowan ,North Carolina,38.82,51.17,0,0,0,0,0
-Franklin ,North Carolina,85.32,56.82,0,0,0,0,0
-Madison ,North Carolina,90.62,63.93,0,0,1,0,0
-Martin ,North Carolina,78.12,60.03,0,0,1,1,1
-Avery ,North Carolina,88.78,62.55,0,0,1,0,0
-McDowell ,North Carolina,70.3,67.07,0,0,1,0,0
-Wake ,North Carolina,6.1,46.66,0,0,0,0,0
-Cumberland ,North Carolina,13.37,57.41,0,0,0,0,0
-Iredell ,North Carolina,37.91,48.24,0,0,0,0,0
-Montgomery ,North Carolina,76.84,57.71,0,1,1,0,0
-Buncombe ,North Carolina,24.08,62.11,0,0,0,0,0
-Wayne ,North Carolina,46.4,64.79,0,0,0,0,0
-Nash ,North Carolina,47.56,53.71,0,0,0,0,0
-Guilford ,North Carolina,12.69,41.41,0,0,0,0,0
-Buncombe ,North Carolina,24.08,62.11,0,0,0,0,0
-Orange ,North Carolina,28.53,50.56,0,0,0,0,0
-Mecklenburg ,North Carolina,1.07,29.08,0,0,0,0,0
-Guilford ,North Carolina,12.69,41.41,0,0,0,0,0
-Durham ,North Carolina,5.63,39.41,0,0,0,0,0
-Wake ,North Carolina,6.1,46.66,0,0,0,0,0
-Nash ,North Carolina,47.56,53.71,0,0,0,0,0
-New Hanover ,North Carolina,2.21,37.98,0,0,0,0,0
-Pamlico ,North Carolina,100,65.18,0,0,1,0,1
-Wake ,North Carolina,6.1,46.66,0,0,0,0,0
-Robeson ,North Carolina,62.61,54.92,0,1,1,1,1
-Stanly ,North Carolina,67.71,50.17,0,0,0,0,0
-Person ,North Carolina,75.52,56.78,0,0,0,0,0
-Pitt ,North Carolina,25.44,53.23,0,0,0,1,1
-Mecklenburg ,North Carolina,1.07,29.08,0,0,0,0,0
-Randolph ,North Carolina,56.24,48.33,0,0,0,0,0
-Richmond ,North Carolina,45.53,59.96,1,0,1,0,0
-Hertford ,North Carolina,68.64,84.47,0,0,1,0,1
-Robeson ,North Carolina,62.61,54.92,0,1,1,1,1
-Rockingham ,North Carolina,61.94,53.97,0,0,0,0,0
-Rowan ,North Carolina,38.82,51.17,0,0,0,0,0
-Wake ,North Carolina,6.1,46.66,0,0,0,0,0
-Forsyth ,North Carolina,7.35,53.61,0,0,0,0,0
-Sampson ,North Carolina,84.96,62.39,0,1,0,0,1
-Moore ,North Carolina,50.66,49.88,0,0,0,0,0
-Wake ,North Carolina,6.1,46.66,0,0,0,0,0
-Scotland ,North Carolina,48.39,50.9,0,0,1,0,0
-Columbus ,North Carolina,80.59,63.72,0,0,1,1,1
-Jackson ,North Carolina,73.09,73.2,0,0,0,0,0
-Stanly ,North Carolina,67.71,50.17,0,0,0,0,0
-Wake ,North Carolina,6.1,46.66,0,0,0,0,0
-Surry ,North Carolina,68.81,78.48,0,1,0,0,0
-Alamance ,North Carolina,28.56,50.44,0,0,0,0,0
-Cherokee ,North Carolina,100,94.51,1,0,1,0,0
-Vance ,North Carolina,54.08,74.39,0,1,1,0,1
-Forsyth ,North Carolina,7.35,53.61,0,0,0,0,0
-Wake ,North Carolina,6.1,46.66,0,0,0,0,0
-Buncombe ,North Carolina,24.08,62.11,0,0,0,0,0
-Wayne ,North Carolina,46.4,64.79,0,0,0,0,0
-Burke ,North Carolina,42.65,54.73,0,0,0,0,0
-Wilkes ,North Carolina,72.79,67.97,0,1,1,0,0
-Wilson ,North Carolina,38.66,50.77,0,0,0,0,1
-Union ,North Carolina,27.29,45.36,0,0,0,0,0
-Forsyth ,North Carolina,7.35,53.61,0,0,0,0,0
-Jackson ,North Carolina,73.09,73.2,0,0,0,0,0
-Mecklenburg ,North Carolina,1.07,29.08,0,0,0,0,0
+countyname,county_pct_rural,cluster_pct_rural_avg,not_adjacent_urban,lowed,lowemp,perpov,perchldpov
+pasquotank,41.32,88.17,0,0,0,0,1
+anson,78.51,60.67,0,1,1,0,0
+watauga,55.44,70.25,1,0,0,0,0
+buncombe,24.08,62.11,0,0,0,0,0
+wilson,38.66,50.77,0,0,0,0,1
+beaufort,65.6,66.38,0,0,1,0,1
+gaston,19.65,30.8,0,0,0,0,0
+guilford,12.69,41.41,0,0,0,0,0
+bladen,91.23,66.92,0,1,1,1,1
+henderson,33.27,48.34,0,0,0,0,0
+transylvania,59.64,47.82,0,0,0,0,0
+brunswick,42.96,44.98,0,0,1,0,0
+caldwell,34.43,56.74,0,1,0,0,0
+harnett,55.92,46.47,0,0,0,0,0
+new hanover,2.21,37.98,0,0,0,0,0
+carteret,32.6,64.44,0,0,0,0,0
+rowan,38.82,51.17,0,0,0,0,0
+catawba,30.3,45.44,0,0,0,0,0
+lee,42.76,53.82,0,0,0,0,0
+mecklenburg,1.07,29.08,0,0,0,0,0
+hertford,68.64,84.47,0,0,1,0,1
+cleveland,55.79,45.38,0,0,0,0,0
+onslow,26.35,62.83,0,0,0,0,0
+craven,27.71,56.62,0,0,1,0,0
+davidson,47.38,47.17,0,0,0,0,0
+durham,5.63,39.41,0,0,0,0,0
+pitt,25.44,53.23,0,0,0,1,1
+edgecombe,45.31,48.3,0,0,1,0,1
+alamance,28.56,50.44,0,0,0,0,0
+cumberland,13.37,57.41,0,0,0,0,0
+forsyth,7.35,53.61,0,0,0,0,0
+halifax,54.71,72.95,0,0,1,1,1
+haywood,55.44,62.26,0,0,0,0,0
+rutherford,61.04,51.99,0,0,1,0,0
+duplin,86.46,65.42,0,1,0,0,1
+johnston,52.04,52.12,0,0,0,0,0
+avery,88.78,62.55,0,0,1,0,0
+lenoir,45.01,61.57,0,0,0,0,1
+franklin,85.32,56.82,0,0,0,0,0
+madison,90.62,63.93,0,0,1,0,0
+martin,78.12,60.03,0,0,1,1,1
+mcdowell,70.3,67.07,0,0,1,0,0
+wake,6.1,46.66,0,0,0,0,0
+iredell,37.91,48.24,0,0,0,0,0
+montgomery,76.84,57.71,0,1,1,0,0
+wayne,46.4,64.79,0,0,0,0,0
+nash,47.56,53.71,0,0,0,0,0
+orange,28.53,50.56,0,0,0,0,0
+pamlico,100,65.18,0,0,1,0,1
+robeson,62.61,54.92,0,1,1,1,1
+stanly,67.71,50.17,0,0,0,0,0
+person,75.52,56.78,0,0,0,0,0
+randolph,56.24,48.33,0,0,0,0,0
+richmond,45.53,59.96,1,0,1,0,0
+rockingham,61.94,53.97,0,0,0,0,0
+sampson,84.96,62.39,0,1,0,0,1
+moore,50.66,49.88,0,0,0,0,0
+scotland,48.39,50.9,0,0,1,0,0
+columbus,80.59,63.72,0,0,1,1,1
+jackson,73.09,73.2,0,0,0,0,0
+surry,68.81,78.48,0,1,0,0,0
+cherokee,100,94.51,1,0,1,0,0
+vance,54.08,74.39,0,1,1,0,1
+burke,42.65,54.73,0,0,0,0,0
+wilkes,72.79,67.97,0,1,1,0,0
+union,27.29,45.36,0,0,0,0,0

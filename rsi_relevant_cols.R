@@ -13,8 +13,8 @@ rsi <- rsi %>%
            perpov,
            perchldpov
            )%>%
-           mutate(countyname = str_sub(countyname, end = -11)) %>%
-           filter(state == "North Carolina" & duplicated(countyname == FALSE))
+         mutate(countyname = str_sub(countyname, end = -11)) %>%
+         filter(state == "North Carolina")
 
 rsi <- unique(rsi)
 
