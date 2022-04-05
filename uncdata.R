@@ -20,6 +20,7 @@ internet1 <- internet %>%
 enrollment <- read.csv("overallunc.csv")
 enrollment2 <- enrollment %>% filter(X == "Student Headcount") %>% select("County", "Fall.2019")
 
+
 #Join the two data frames by county name
 combined <- inner_join(enrollment2, internet1, by = setNames('NAME_LOCAS', 'County')) 
                        
@@ -42,7 +43,12 @@ combined3 <- inner_join(combined2, classification, by = setNames("COUNTYNAME", "
 rate_of_admit <- combined3$Fall.2019/combined2$Population
 combined3$rate <- rate_of_admit
 
+# Read in the educational data by county
+full_data <- read.csv("schooldata.csv")
+full_data$County <- (gsub(" County","",full_data$Name))
 
+full_data$Charter..Private..Home.Schools
+full_data <- inner_join(full_data, combined3, by = setNames("County", "County"))
 
 # Plot the % of internet available vs the rate of enrollment
 ggplot(data = combined3, aes(x=combined3$Percent_No_Int__Access, y=rate, size = Population, color = URBAN_RURAL )) + 

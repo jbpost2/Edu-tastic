@@ -36,7 +36,14 @@ shinyUI(fluidPage(
                                "Adoption" = "Adoption",
                                "% of pop with no provider" ="Percent_Pop__No_Prov_",
                                "% of pop with 25 down / 3 up" = "Percent_Pop__25_3",
-                               "% of pop with 100 down / 20 up" = "Percent_Pop__100_20"
+                               "% of pop with 100 down / 20 up" = "Percent_Pop__100_20",
+                               "number of students in 2018"="Traditional.Schools",
+                               "number of charter/private/home school students"="Charter..Private..Home.Schools",
+                               "Median Income"="Median.Household.Income",
+                               "Child poverty rate" = "Child.Poverty.Rate",
+                               "AP Participation rate" = "AP.Participation.Rate",
+                               "% Enroll in Post-Secondary" = "Enroll.in.Postsecondary.within.12.months",
+                               "Total Graduates 2018"="Total.Graduates..2018."
                                )),
                  
                  #Choose y variable for exploration
@@ -51,8 +58,14 @@ shinyUI(fluidPage(
                                "Adoption" = "Adoption",
                                "% of pop with no provider" ="Percent_Pop__No_Prov_",
                                "% of pop with 25 down / 3 up" = "Percent_Pop__25_3",
-                               "% of pop with 100 down / 20 up" = "Percent_Pop__100_20"
-                               )),
+                               "% of pop with 100 down / 20 up" = "Percent_Pop__100_20",
+                               "number of students in 2018"="Traditional.Schools",
+                               "number of charter/private/home school students"="Charter..Private..Home.Schools",
+                               "Median Income"="Median.Household.Income",
+                               "Child poverty rate" = "Child.Poverty.Rate",
+                               "AP Participation rate" = "AP.Participation.Rate",
+                               "% Enroll in Post-Secondary" = "Enroll.in.Postsecondary.within.12.months",
+                               "Total Graduates 2018"="Total.Graduates..2018.")),
                  
                  
                  
