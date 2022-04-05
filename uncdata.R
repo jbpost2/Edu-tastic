@@ -2,13 +2,25 @@ library(tidyverse)
 
 # Read in the internet data and select only relevant columns
 internet <- read.csv("NC_Broadband_Indices.csv")
-internet1 <- internet %>% filter(YEAR == "2019" ) %>% select(NAME_LOCAS,Percent_Ages_18_34, Percent_No_Int__Access, Percent_Poverty, Percent_Lim__English, Percent_No_Comp__Devices  )
+internet1 <- internet %>% 
+  filter(YEAR == "2019" ) %>% 
+  select(NAME_LOCAS,
+         Percent_Ages_18_34, 
+         Percent_No_Int__Access, 
+         Percent_Poverty, 
+         Percent_Lim__English, 
+         Percent_No_Comp__Devices, 
+         Availability,
+         Adoption,
+         Percent_Pop__No_Prov_,
+         Percent_Pop__25_3,
+         Percent_Pop__100_20)
 
 # Read in the UNC Enrollment data
 enrollment <- read.csv("overallunc.csv")
 enrollment2 <- enrollment %>% filter(X == "Student Headcount") %>% select("County", "Fall.2019")
 
-g#Join the two data frames by county name
+#Join the two data frames by county name
 combined <- inner_join(enrollment2, internet1, by = setNames('NAME_LOCAS', 'County')) 
                        
 # Enrollment numbers were not numbers so convert them

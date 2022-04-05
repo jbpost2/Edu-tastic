@@ -31,7 +31,12 @@ shinyUI(fluidPage(
                                "% no internet access" = "Percent_No_Int__Access",
                                "% Poverty"= "Percent_Poverty",
                                "% Limited English"="Percent_Lim__English",
-                               "% No Computer Devices" = "Percent_No_Comp__Devices"
+                               "% No Computer Devices" = "Percent_No_Comp__Devices",
+                               "Availability" = "Availability",
+                               "Adoption" = "Adoption",
+                               "% of pop with no provider" ="Percent_Pop__No_Prov_",
+                               "% of pop with 25 down / 3 up" = "Percent_Pop__25_3",
+                               "% of pop with 100 down / 20 up" = "Percent_Pop__100_20"
                                )),
                  
                  #Choose y variable for exploration
@@ -41,7 +46,13 @@ shinyUI(fluidPage(
                                "% no internet access" = "Percent_No_Int__Access",
                                "% Poverty"= "Percent_Poverty",
                                "% Limited English"="Percent_Lim__English",
-                               "% No Computer Devices" = "Percent_No_Comp__Devices")),
+                               "% No Computer Devices" = "Percent_No_Comp__Devices",
+                               "Availability" = "Availability",
+                               "Adoption" = "Adoption",
+                               "% of pop with no provider" ="Percent_Pop__No_Prov_",
+                               "% of pop with 25 down / 3 up" = "Percent_Pop__25_3",
+                               "% of pop with 100 down / 20 up" = "Percent_Pop__100_20"
+                               )),
                  
                  
                  
