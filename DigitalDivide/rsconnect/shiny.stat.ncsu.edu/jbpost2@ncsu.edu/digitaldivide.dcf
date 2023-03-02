@@ -1,0 +1,14 @@
+name: digitaldivide
+title: DigitalDivide
+username: jbpost2@ncsu.edu
+account: jbpost2@ncsu.edu
+server: shiny.stat.ncsu.edu
+hostUrl: https://shiny.stat.ncsu.edu/__api__
+appId: 60
+bundleId: 92
+url: https://shiny.stat.ncsu.edu/content/2c90000e-ff5a-44c4-8c93-85b498662ae3/
+when: 1677774968.03448
+lastSyncTime: 1677774968.03449
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: elastic.R|uncdata.R

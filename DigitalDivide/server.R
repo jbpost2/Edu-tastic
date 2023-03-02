@@ -8,7 +8,8 @@
 #
 
 library(shiny)
-library(tidyverse)
+library(readr)
+library(dplyr)
 library(plotly)
 
 
